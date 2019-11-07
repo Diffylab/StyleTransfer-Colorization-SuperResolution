@@ -35,7 +35,7 @@ namespace NeuralColor
             this.Enhancer.Abort();
             this.Enhancer = null;
             this.OpenOriginal.Enabled = true;
-            this.GenerateOrSaveResult.Text = "Окрасить";
+            this.GenerateOrSaveResult.Text = "Colorize";
             this.GenerateOrSaveResult.Click -= this.StopProcess;
             this.GenerateOrSaveResult.Click += this.StartProcess;
             this.Progress.Value = 0;
@@ -59,7 +59,7 @@ namespace NeuralColor
         {
             this.TotalPercent = 0f;
             this.Enhancer = new Thread(this.Enhance);
-            this.GenerateOrSaveResult.Text = "Остановить процесс";
+            this.GenerateOrSaveResult.Text = "Stop";
             this.GenerateOrSaveResult.Click -= this.StartProcess;
             this.GenerateOrSaveResult.Click += this.StopProcess;
             this.OpenOriginal.Enabled = false;
@@ -73,7 +73,7 @@ namespace NeuralColor
             var ab = this.Net.Colorize(IOConverters.ImageToTensor(original));
             this.Result.Image = IOConverters.TensorToImage(original, ab);
             this.Progress.Value = 0;
-            this.GenerateOrSaveResult.Text = "Сохранить";
+            this.GenerateOrSaveResult.Text = "Save";
             this.GenerateOrSaveResult.Click -= this.StopProcess;
             this.GenerateOrSaveResult.Click += this.SaveResult;
             this.OpenOriginal.Enabled = true;
@@ -85,8 +85,8 @@ namespace NeuralColor
         private void SaveResult(object sender, EventArgs E)
         {
             var SFD = new SaveFileDialog();
-            SFD.Title = "Сохранить результат";
-            SFD.Filter = "Изображения (*.bmp)|*.bmp|Изображения (*.emf)|*.emf|Изображения (*.exif)|*.exif|Изображения (*.gif)|*.gif|Изображения (*.ico)|*.ico|Изображения (*.jpg)|*.jpg|Изображения (*.png)|*.png|Изображения (*.tiff)|*.tiff|Изображения (*.wmf)|*.wmf";
+            SFD.Title = "Save";
+            SFD.Filter = "Images (*.bmp)|*.bmp|Images (*.emf)|*.emf|Images (*.exif)|*.exif|Images (*.gif)|*.gif|Images (*.ico)|*.ico|Images (*.jpg)|*.jpg|Images (*.png)|*.png|Images (*.tiff)|*.tiff|Images (*.wmf)|*.wmf";
             if(SFD.ShowDialog() == DialogResult.OK)
             {
                 switch(SFD.FilterIndex)
@@ -158,14 +158,14 @@ namespace NeuralColor
         private void OpenOriginalHandler(object sender, EventArgs E)
         {
             var OFD = new OpenFileDialog();
-            OFD.Title = "Открыть изображение";
-            OFD.Filter = "Изображения (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|Все файлы|*.*";
+            OFD.Title = "Open";
+            OFD.Filter = "Images (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|All files|*.*";
             if(OFD.ShowDialog() == DialogResult.OK)
             {
                 this.Original.Image = new Bitmap(OFD.FileName);
-                if(GenerateOrSaveResult.Text != "Окрасить")
+                if(GenerateOrSaveResult.Text != "Colorize")
                 {
-                    this.GenerateOrSaveResult.Text = "Окрасить";
+                    this.GenerateOrSaveResult.Text = "Colorize";
                     this.GenerateOrSaveResult.Click -= SaveResult;
                     this.GenerateOrSaveResult.Click += StartProcess;
                 }
