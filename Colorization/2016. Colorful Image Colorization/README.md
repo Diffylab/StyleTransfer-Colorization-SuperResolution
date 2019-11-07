@@ -3,7 +3,7 @@ Coloring black-and-white images using Richard Sheng's neural network version 1.
 
 # The developers of the method: Richard Zhang, Phillip Isola, Alexei A. Efros
 * Author's implementation: https://github.com/richzhang/colorization
-* Paper: https://arxiv.org/abs/1603.08511 (доступен также в папке Paper)
+* Paper: https://arxiv.org/abs/1603.08511 (also available in the Paper folder)
 
 # Compile and run the application
 1. Go to the Implementation folder
@@ -19,24 +19,24 @@ Coloring black-and-white images using Richard Sheng's neural network version 1.
 
 * Original
 
-![Original](https://github.com/ColorfulSoft/Demos/blob/master/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/1.jpg)
+![Original](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/1.jpg)
 
 * Result
 
-![Result](https://github.com/ColorfulSoft/Demos/blob/master/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_1.png)
+![Result](https://github.com/ColorfulSoft/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_1.png)
 
 * Original
 
-![Original](https://github.com/ColorfulSoft/Demos/blob/master/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/2.jpg)
+![Original](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/2.jpg)
 
 * Result
 
-![Result](https://github.com/ColorfulSoft/Demos/blob/master/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_2.png)
+![Result](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_2.png)
 
 * Original
 
-![Original](https://github.com/ColorfulSoft/Demos/blob/master/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/3.jpg)
+![Original](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/3.jpg)
 
 * Result
 
-![Result](https://github.com/ColorfulSoft/Demos/blob/master/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_3.png)
+![Result](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_3.png)
