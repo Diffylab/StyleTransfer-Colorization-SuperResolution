@@ -23,7 +23,7 @@ Coloring black-and-white images using Richard Sheng's neural network version 1.
 
 * Result
 
-![Result](https://github.com/ColorfulSoft/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_1.png)
+![Result](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Colorization/2016.%20Colorful%20Image%20Colorization/Examples/Result_1.png)
 
 * Original
 
