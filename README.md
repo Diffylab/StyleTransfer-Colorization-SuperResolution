@@ -8,7 +8,7 @@ Demonstration implementations of neural network image processing algorithms. Eve
 * Commercial use of some algorithms implemented here is prohibited by the authors. Carefully study the license in the official repositories!
 * Detailed instructions on how to run implementations can be found in the file [MANUAL.md](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/master/MANUAL.md).
 
-# Новости
+# News
 
 * [16.10.2019] Sparse convolution optimized (dilated conv2d) in Colorful Image Colorization.
 * [16.10.2019] Added repository icon.
