@@ -1,30 +1,30 @@
 # Demos
-Демонстрационные реализации нейросетевых алгоритмов обработки изображений. Всё написано с нуля на языке C# и не имеет зависимостей от сторонних библиотек. Для запуска требуется Windows XP и выше, .NET Framework 4.0 и выше. Рекомендуется Windows 7 и .NET Framework 4.5. Разрядность системы любая.
+Demonstration implementations of neural network image processing algorithms. Everything is written from scratch in C# and has no dependencies on third-party libraries. Windows XP and above, .NET Framework 4.0 and above are required to run. Windows 7 and .NET Framework 4.5 are recommended. The bit depth of the system is any.
 
-# Важно!
+# Important!
 
-* Все представленные реализации уступают по производительности соответствующим авторским кодам. Все материалы, представленные в этом репозитории, предназначены исключительно для ознакомления и нацелены на возможность запуска нейросетей "из коробки" на домашних ПК, а не на регулярное использование. Однако, несмотря на это, постоянно ведётся работа над оптимизацией ;)
-* Представленные программы являются исключительно ресурсоёмкими. Несмотря на теоретическую возможность их запуска на старых ПК, ожидать высокой скорости работы кодов даже на современных машинах также не следует.
-* Коммерческое использование некоторых реализованных здесь алгоритмов запрещено авторами. Внимательно изучите лицензию в официальных репозиториях!
-* Подробную инструкцию по запуску реализаций можно найти в файле [MANUAL.md](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/master/MANUAL.md).
+* All the presented implementations are inferior in performance to the corresponding author's codes. All materials presented in this repository are intended solely for reference and are aimed at the ability to run neural networks "out of the box" on home PCs, and not for regular use. However, despite this, we are constantly working on optimization ;)
+* The programs presented are extremely resource-intensive. Despite the theoretical possibility of running them on older PCs, you should not expect a high speed of codes even on modern machines.
+* Commercial use of some algorithms implemented here is prohibited by the authors. Carefully study the license in the official repositories!
+* Detailed instructions on how to run implementations can be found in the file [MANUAL.md](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/master/MANUAL.md).
 
 # Новости
 
-* [16.10.2019] Оптимизирована разреженная свёртка (dilated conv2d) в Colorful Image Colorization.
-* [16.10.2019] Добавлен значок репозитория.
-* [30.06.2019] Обновлена реализация "Avatar-Net: Multi-scale Zero-shot Style Transfer by Feature Decoration": веса конвертированы в формат Half, демонстрационные изображения конвертированы в формат jpeg.
-* [30.06.2019] Обновлена реализация "Perceptual Losses for Real-Time Style Transfer and Super-Resolution": веса конвертированы в формат Half, демонстрационные изображения конвертированы в формат jpeg.
-* [30.06.2019] Обновлена реализация "Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization": веса конвертированы в формат Half, демонстрационные изображения конвертированы в формат jpeg.
-* [30.06.2019] Обновлены примеры к TensorZoom.
-* [30.06.2019] Обновлена реализация "Universal Style Transfer via Feature Transforms": веса конвертированы в формат Half, удалены дублирующие веса, демонстрационные изображения конвертированы в формат jpeg.
-* [11.06.2019] Добавлена инструкция по запуску представленных в данном репозитории кодов.
-* [11.06.2019] Размещена реализация работы "Arbitrary Style Transfer with Style-Attentional Networks".
-* [02.06.2019] Обновлена реализация Алгоритма Гатиса: веса конвертированы в формат Half, демонстрационные изображения конвертированы в формат jpeg.
-* [21.05.2019] Обновлены примеры к Алгоритму Гатиса.
-* [20.05.2019] Опубликовано несколько новых примеров к Алгоритму Гатиса.
-* [10.05.2019] Размещена реализация работы "Fast Patch-based Style Transfer of Arbitrary Style".
-* [05.05.2019] Реализована нейросеть Waifu2x(только супер-разрешение для фото).
-* [03.05.2019] Реализована работа Джастина Джонсона "Perceptual Losses for Real-Time Style Transfer and Super-Resolution".
-* [28.03.2019] Открыт новый раздел "Colorization" и размещена реализация работы "Colorful Image Colorization" Ричарда Шенга; исправлена реализация AvatarNet и обновлены примеры к ней.
-* [14.03.2019] Оптимизирован слой ConvTranspose2D в TensorZoom.
-* [11.03.2019] Размещена реализация работы "Avatar-Net: Multi-scale Zero-shot Style Transfer by Feature Decoration" Люкаса Шенга.
+* [16.10.2019] Sparse convolution optimized (dilated conv2d) in Colorful Image Colorization.
+* [16.10.2019] Added repository icon.
+* [30.06.2019] Updated implementation of "Avatar-Net: Multi-scale Zero-shot Style Transfer by Feature Decoration": weights converted to Half format, demo images converted to jpeg format.
+* [30.06.2019] Updated implementation of "Perceptual Losses for Real-Time Style Transfer and Super-Resolution": weights converted to Half format, demo images converted to jpeg format.
+* [30.06.2019] Updated implementation of "Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization": weights converted to Half format, demo images converted to jpeg format.
+* [30.06.2019] Updated examples to TensorZoom.
+* [30.06.2019] Updated implementation of "Universal Style Transfer via Feature Transforms": weights converted to Half format, duplicate weights removed, demo images converted to jpeg format.
+* [11.06.2019] Added instructions for running the codes presented in this repository.
+* [11.06.2019] The implementation of "Arbitrary Style Transfer with Style-Attentional Networks" is placed.
+* [02.06.2019] Updated implementation of Gatys's Algorithm: weights converted to Half format, demo images converted to jpeg format.
+* [21.05.2019] Updated examples to the Gatys's Algorithm.
+* [20.05.2019] Several new examples to the Gatys's Algorithm are published.
+* [10.05.2019] Posted implementation of "Fast Patch-based Style Transfer of Arbitrary Style".
+* [05.05.2019] Implemented neural network Waifu2x(only super-resolution for photos).
+* [03.05.2019] Justin Johnson's work "Perceptual Losses for Real-Time Style Transfer and Super-Resolution" is realized.
+* [28.03.2019] Opened a new section "Colorization" and posted the implementation of "Colorful Image Colorization" by Richard Sheng; fixed the implementation of AvatarNet and updated examples to it.
+* [14.03.2019] Optimized ConvTranspose2D layer in TensorZoom.
+* [11.03.2019] Posted implementation of "Avatar-Net: Multi-scale Zero-shot Style Transfer by Feature Decoration" by Lukas Sheng.
