@@ -67,7 +67,7 @@ namespace NeuralColor
             this.MaximizeBox = false;
             // -> OriginalSettings
             this.OriginalSettings = new GroupBox();
-            this.OriginalSettings.Text = "Чёрно-белое";
+            this.OriginalSettings.Text = "black-white";
             this.OriginalSettings.Width = 276;
             this.OriginalSettings.Height = 321;
             this.OriginalSettings.Top = 10;
@@ -87,12 +87,12 @@ namespace NeuralColor
               this.OpenOriginal.Top = 286;
               this.OpenOriginal.Left = 10;
               this.OpenOriginal.Size = new Size(256, 25);
-              this.OpenOriginal.Text = "Открыть";
+              this.OpenOriginal.Text = "Open";
               this.OriginalSettings.Controls.Add(this.OpenOriginal);
             this.Controls.Add(this.OriginalSettings);
             // -> ResultSettings
             this.ResultSettings = new GroupBox();
-            this.ResultSettings.Text = "Результат";
+            this.ResultSettings.Text = "Result";
             this.ResultSettings.Width = 276;
             this.ResultSettings.Height = 321;
             this.ResultSettings.Top = 10;
