@@ -1,25 +1,25 @@
 # TensorZoom
-SRGAN - подобная нейросеть для увеличения изображений в 4 раза по каждой стороне.
+SRGAN - like neural network to magnify images 4 times on each side.
 
-# Разработчик метода: Chris(https://github.com/machrisaa)
-* Авторская реализация: https://github.com/machrisaa/tensorzoom
+# The developer of the method: Chris(https://github.com/machrisaa)
+* Author's implementation: https://github.com/machrisaa/tensorzoom
 
-# Компиляция и запуск приложения
-1. Зайти в папку Implementation
-2. Запустить файл Compile.bat. Будет создана папка Release, а в ней файл TensorZoom.exe
-3. Пройти в папку Release и запустить TensorZoom.exe
+# Compile and run the application
+1. Go to the Implementation folder.
+2. Run the Compile.bat file. The Release folder will be created, and in it the TensorZoom.exe file.
+3. Go to the Release folder and run TensorZoom.exe
 
-# Минимальные системные требования
-* Windows XP и выше. Разрядность любая.
-* 1 ГБ оперативной памяти.
-* .NET Framework 4.0 и выше. Возможно, программа запустится и на .NET Framework 3.5.
+# Minimum system requirements
+* Windows XP and above. Any bit depth.
+* 1 GB of RAM.
+* .NET Framework 4.0 and above. It is possible that the program will run on the .NET Framework 3.5.
 
-# Примеры работы:
+# Examples of work:
 
-* Оригинал
+* Original
 
-![Оригинал](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/master/Enhancing/TensorZoom/Examples/Kryukovo.jpg)
+![Original](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Enhancing/TensorZoom/Examples/Kryukovo.jpg)
 
-* Результат
+* Result
 
-![Результат](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/master/Enhancing/TensorZoom/Examples/Result.jpg)
+![Result](https://github.com/ColorfulSoft/StyleTransfer-Colorization-SuperResolution/blob/English/Enhancing/TensorZoom/Examples/Result.jpg)
