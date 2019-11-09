@@ -109,7 +109,7 @@ namespace NeuralArt
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //-> ContentSettings
             this.ContentSettings = new GroupBox();
-            this.ContentSettings.Text = "Контент";
+            this.ContentSettings.Text = "Content";
             this.ContentSettings.Size = new Size(276, 321);
             this.ContentSettings.Top = 10;
             this.ContentSettings.Left = 10;
@@ -124,7 +124,7 @@ namespace NeuralArt
               this.ContentSettings.Controls.Add(this.ContentImageBox);
               //-> OpenContent
               this.OpenContent = new Button();
-              this.OpenContent.Text = "Открыть контентное изображение";
+              this.OpenContent.Text = "Open";
               this.OpenContent.Size = new Size(256, 25);
               this.OpenContent.Left = 10;
               this.OpenContent.Top = 286;
@@ -133,7 +133,7 @@ namespace NeuralArt
             this.Controls.Add(this.ContentSettings);
             //-> ResultSettings
             this.ResultSettings = new GroupBox();
-            this.ResultSettings.Text = "Результат";
+            this.ResultSettings.Text = "Result";
             this.ResultSettings.Size = new Size(276, 321);
             this.ResultSettings.Top = 10;
             this.ResultSettings.Left = 296;
@@ -148,7 +148,7 @@ namespace NeuralArt
               this.ResultSettings.Controls.Add(this.ResultImageBox);
               //-> SaveResult
               this.SaveResult = new Button();
-              this.SaveResult.Text = "Сохранить результат";
+              this.SaveResult.Text = "Save";
               this.SaveResult.Size = new Size(256, 25);
               this.SaveResult.Left = 10;
               this.SaveResult.Top = 286;
@@ -157,7 +157,7 @@ namespace NeuralArt
             this.Controls.Add(this.ResultSettings);
             //-> StyleSettings
             this.StyleSettings = new GroupBox();
-            this.StyleSettings.Text = "Стиль";
+            this.StyleSettings.Text = "Style";
             this.StyleSettings.Size = new Size(276, 321);
             this.StyleSettings.Top = 10;
             this.StyleSettings.Left = 582;
@@ -172,7 +172,7 @@ namespace NeuralArt
               this.StyleSettings.Controls.Add(this.StyleImageBox);
               //-> OpenStyle
               this.OpenStyle = new Button();
-              this.OpenStyle.Text = "Открыть стилевое изображение";
+              this.OpenStyle.Text = "Open";
               this.OpenStyle.Size = new Size(256, 25);
               this.OpenStyle.Left = 10;
               this.OpenStyle.Top = 286;
@@ -181,14 +181,14 @@ namespace NeuralArt
             this.Controls.Add(this.StyleSettings);
             //-> StartProcess
             this.StartProcess = new Button();
-            this.StartProcess.Text = "Запустить итеративный процесс";
+            this.StartProcess.Text = "Start";
             this.StartProcess.Size = new Size(276, 25);
             this.StartProcess.Left = 10;
             this.StartProcess.Top = 341;
             this.Controls.Add(this.StartProcess);
             //-> Iteration
             this.Iteration = new Label();
-            this.Iteration.Text = "Итерация: 0; Время: 0";
+            this.Iteration.Text = "Iteration: 0; Time: 0";
             this.Iteration.TextAlign = ContentAlignment.MiddleCenter;
             this.Iteration.Size = new Size(276, 25);
             this.Iteration.Left = 296;
@@ -196,7 +196,7 @@ namespace NeuralArt
             this.Controls.Add(this.Iteration);
             //-> StopProcess
             this.StopProcess = new Button();
-            this.StopProcess.Text = "Остановить итеративный процесс";
+            this.StopProcess.Text = "Stop";
             this.StopProcess.Enabled = false;
             this.StopProcess.Size = new Size(276, 25);
             this.StopProcess.Left = 582;
