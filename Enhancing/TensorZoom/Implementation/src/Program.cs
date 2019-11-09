@@ -1,4 +1,4 @@
-﻿//*************************************************************************************************
+//*************************************************************************************************
 //* (C) ColorfulSoft, 2019. Все права защищены.
 //*************************************************************************************************
 
@@ -35,7 +35,7 @@ namespace NeuralEnhance
             this.Enhancer.Abort();
             this.Enhancer = null;
             this.OpenOriginal.Enabled = true;
-            this.GenerateOrSaveResult.Text = "Запустить процесс";
+            this.GenerateOrSaveResult.Text = "Start";
             this.GenerateOrSaveResult.Click -= this.StopProcess;
             this.GenerateOrSaveResult.Click += this.StartProcess;
             this.Progress.Value = 0;
@@ -58,7 +58,7 @@ namespace NeuralEnhance
         private void StartProcess(object sender, EventArgs E)
         {
             this.Enhancer = new Thread(this.Enhance);
-            this.GenerateOrSaveResult.Text = "Остановить процесс";
+            this.GenerateOrSaveResult.Text = "Stop";
             this.GenerateOrSaveResult.Click -= this.StartProcess;
             this.GenerateOrSaveResult.Click += this.StopProcess;
             this.OpenOriginal.Enabled = false;
@@ -71,7 +71,7 @@ namespace NeuralEnhance
             var original = IOConverters.ImageToTensor(this.Original.Image as Bitmap);
             this.Result.Image = IOConverters.TensorToImage(Net.Enhance(original));
             this.Progress.Value = 0;
-            this.GenerateOrSaveResult.Text = "Сохранить";
+            this.GenerateOrSaveResult.Text = "Save";
             this.GenerateOrSaveResult.Click -= this.StopProcess;
             this.GenerateOrSaveResult.Click += this.SaveResult;
             this.OpenOriginal.Enabled = true;
@@ -83,8 +83,8 @@ namespace NeuralEnhance
         private void SaveResult(object sender, EventArgs E)
         {
             var SFD = new SaveFileDialog();
-            SFD.Title = "Сохранить результат";
-            SFD.Filter = "Изображения (*.bmp)|*.bmp|Изображения (*.emf)|*.emf|Изображения (*.exif)|*.exif|Изображения (*.gif)|*.gif|Изображения (*.ico)|*.ico|Изображения (*.jpg)|*.jpg|Изображения (*.png)|*.png|Изображения (*.tiff)|*.tiff|Изображения (*.wmf)|*.wmf";
+            SFD.Title = "Save";
+            SFD.Filter = "Images (*.bmp)|*.bmp|Images (*.emf)|*.emf|Images (*.exif)|*.exif|Images (*.gif)|*.gif|Images (*.ico)|*.ico|Images (*.jpg)|*.jpg|Images (*.png)|*.png|Images (*.tiff)|*.tiff|Images (*.wmf)|*.wmf";
             if(SFD.ShowDialog() == DialogResult.OK)
             {
                 switch(SFD.FilterIndex)
@@ -149,14 +149,14 @@ namespace NeuralEnhance
         private void OpenOriginalHandler(object sender, EventArgs E)
         {
             var OFD = new OpenFileDialog();
-            OFD.Title = "Открыть изображение";
-            OFD.Filter = "Изображения (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|Все файлы|*.*";
+            OFD.Title = "Open";
+            OFD.Filter = "Images (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|All files|*.*";
             if(OFD.ShowDialog() == DialogResult.OK)
             {
                 this.Original.Image = new Bitmap(OFD.FileName);
-                if(GenerateOrSaveResult.Text != "Запустить процесс")
+                if(GenerateOrSaveResult.Text != "Start")
                 {
-                    this.GenerateOrSaveResult.Text = "Запустить процесс";
+                    this.GenerateOrSaveResult.Text = "Start";
                     this.GenerateOrSaveResult.Click -= SaveResult;
                     this.GenerateOrSaveResult.Click += StartProcess;
                 }
