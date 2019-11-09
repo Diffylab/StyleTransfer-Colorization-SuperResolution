@@ -111,7 +111,7 @@ namespace NeuralColor
               this.GenerateOrSaveResult.Top = 286;
               this.GenerateOrSaveResult.Left = 10;
               this.GenerateOrSaveResult.Size = new Size(256, 25);
-              this.GenerateOrSaveResult.Text = "Окрасить";
+              this.GenerateOrSaveResult.Text = "Colorize";
               this.ResultSettings.Controls.Add(this.GenerateOrSaveResult);
             this.Controls.Add(this.ResultSettings);
             // -> Progress
