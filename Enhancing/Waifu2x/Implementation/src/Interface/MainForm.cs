@@ -1,4 +1,4 @@
-﻿//*************************************************************************************************
+//*************************************************************************************************
 //* (C) ColorfulSoft, 2019. Все права защищены.
 //*************************************************************************************************
 
@@ -67,7 +67,7 @@ namespace NeuralEnhance
             this.MaximizeBox = false;
             // -> OriginalSettings
             this.OriginalSettings = new GroupBox();
-            this.OriginalSettings.Text = "Оригинал";
+            this.OriginalSettings.Text = "Original";
             this.OriginalSettings.Width = 276;
             this.OriginalSettings.Height = 321;
             this.OriginalSettings.Top = 10;
@@ -87,12 +87,12 @@ namespace NeuralEnhance
               this.OpenOriginal.Top = 286;
               this.OpenOriginal.Left = 10;
               this.OpenOriginal.Size = new Size(256, 25);
-              this.OpenOriginal.Text = "Открыть изображение";
+              this.OpenOriginal.Text = "Open";
               this.OriginalSettings.Controls.Add(this.OpenOriginal);
             this.Controls.Add(this.OriginalSettings);
             // -> ResultSettings
             this.ResultSettings = new GroupBox();
-            this.ResultSettings.Text = "Оригинал";
+            this.ResultSettings.Text = "Result";
             this.ResultSettings.Width = 276;
             this.ResultSettings.Height = 321;
             this.ResultSettings.Top = 10;
@@ -111,7 +111,7 @@ namespace NeuralEnhance
               this.GenerateOrSaveResult.Top = 286;
               this.GenerateOrSaveResult.Left = 10;
               this.GenerateOrSaveResult.Size = new Size(256, 25);
-              this.GenerateOrSaveResult.Text = "Запустить процесс";
+              this.GenerateOrSaveResult.Text = "Start";
               this.ResultSettings.Controls.Add(this.GenerateOrSaveResult);
             this.Controls.Add(this.ResultSettings);
             // -> Progress
