@@ -109,7 +109,7 @@ namespace NeuralEnhance
               this.GenerateOrSaveResult.Top = 286;
               this.GenerateOrSaveResult.Left = 10;
               this.GenerateOrSaveResult.Size = new Size(256, 25);
-              this.GenerateOrSaveResult.Text = "Save";
+              this.GenerateOrSaveResult.Text = "Start";
               this.ResultSettings.Controls.Add(this.GenerateOrSaveResult);
             this.Controls.Add(this.ResultSettings);
             // -> Progress
