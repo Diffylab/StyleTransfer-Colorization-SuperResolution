@@ -37,8 +37,8 @@ namespace NeuralArt
         public void OpenContentHandler(object sender, EventArgs E)
         {
             var OFD = new OpenFileDialog();
-            OFD.Title = "Открыть контентное изображение";
-            OFD.Filter = "Изображения (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|Все файлы|*.*";
+            OFD.Title = "Open";
+            OFD.Filter = "Images (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|All files|*.*";
             if(OFD.ShowDialog() == DialogResult.OK)
             {
                 this.ContentImageBox.Image = new Bitmap(OFD.FileName);
@@ -52,8 +52,8 @@ namespace NeuralArt
         public void SaveResultHandler(object sender, EventArgs E)
         {
             var SFD = new SaveFileDialog();
-            SFD.Title = "Сохранить результат";
-            SFD.Filter = "Изображения (*.bmp)|*.bmp|Изображения (*.emf)|*.emf|Изображения (*.exif)|*.exif|Изображения (*.gif)|*.gif|Изображения (*.ico)|*.ico|Изображения (*.jpg)|*.jpg|Изображения (*.png)|*.png|Изображения (*.tiff)|*.tiff|Изображения (*.wmf)|*.wmf";
+            SFD.Title = "Save";
+            SFD.Filter = "Images (*.bmp)|*.bmp|Images (*.emf)|*.emf|Images (*.exif)|*.exif|Images (*.gif)|*.gif|Images (*.ico)|*.ico|Images (*.jpg)|*.jpg|Images (*.png)|*.png|Images (*.tiff)|*.tiff|Images (*.wmf)|*.wmf";
             if(SFD.ShowDialog() == DialogResult.OK)
             {
                 switch(SFD.FilterIndex)
@@ -111,8 +111,8 @@ namespace NeuralArt
         public void OpenStyleHandler(object sender, EventArgs E)
         {
             var OFD = new OpenFileDialog();
-            OFD.Title = "Открыть стилевое изображение";
-            OFD.Filter = "Изображения (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|Все файлы|*.*";
+            OFD.Title = "Open";
+            OFD.Filter = "Images (*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf)|*.bmp; *.emf; *.exif; *.gif; *.ico; *.jpg; *.png; *.tiff; *.wmf|All files|*.*";
             if(OFD.ShowDialog() == DialogResult.OK)
             {
                 this.StyleImageBox.Image = new Bitmap(OFD.FileName);
